@@ -27,12 +27,16 @@ if(e.target !== button ){
 //now accordian 
 
 const imp = document.querySelectorAll('.tabs');
+console.log(imp);
 
 const toggle =(events)=>{
   events.currentTarget.classList.toggle('active');
 };
 
-imp.forEach((tabas) => {
-  tabas.addEventListener('click',toggle);
-});
+// imp.forEach((tabs) => {
+//   tabs.addEventListener('click',toggle);
+// });
 
+for(let i=0;i<imp.length;i++){
+  imp[i].addEventListener('click',toggle);
+}
