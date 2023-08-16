@@ -165,7 +165,7 @@ background-color: white;
 button.black{
 background-color: black;
 color: white;
-transition: 0.2s ease;
+transition: 0.2s ease-in;
 }
 
 
