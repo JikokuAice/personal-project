@@ -69,8 +69,8 @@ cel4.addEventListener('click', function(){
     }
     else{
        btnintable.innerText='Done'
-       btnintable.style.backgroundColor='white';
-       btnintable.style.color='black';
+       btnintable.backgroundColor='white';
+       btnintable.color='black';
     }
     });
     if(dropit.options[dropit.selectedIndex].value=='a2'){
@@ -135,7 +135,7 @@ function valiation2(){
     if(isNaN(bookpage)){
 valid2.forEach((e)=>{
 e.style.display='block'
-e.innerText='letter only';
+e.innerText='!number only';
 conditions2=false;
 });
 
