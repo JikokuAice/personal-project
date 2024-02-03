@@ -6,10 +6,10 @@ Welcome to my personal project repository! Here, I showcase my skills and growth
 
 Here's a list of projects I've worked on:
 
-1. **Project Name 1**
-   - Description: Brief description of the project and what inspired me to work on it.
-   - Technologies used: List of technologies, frameworks, and languages used in the project.
-   - Link to the project repository or live demo (if available).
+1. **Book in library mgmt**
+   - Description: This is a book management app that is similar to a task manager app. It helps users keep track of their reading progress or completed books. I was inspired to create this project when I came across the Odin Project. I found this project and thought it would be a great way to learn about CRUD operations, especially for beginners.
+   - Technologies used: Used HTML, CSS, and JS. Utilize Chrome local storage to retain data.
+   - https://github.com/JikokuAice/personal-project/tree/main/Book%20in%20library%20mgmt.
 
 2. **Project Name 2**
    - Description: Brief description of the project and what inspired me to work on it.
