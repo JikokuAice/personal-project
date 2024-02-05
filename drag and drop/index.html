@@ -4,40 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="main.css">
     <title>Drag and Drop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<div class="main">
-    <h1 class="heading">Drag and Drop</h1>
-   <ul class="sortMain">
+<body class="m-0 select-none">
+    <div class="w-screen h-screen bg-black grid grid-cols-1 justify-items-center items-center">
 
-    <li class="sortList" draggable="true">
-<div class="items">
-    <img src="./image/360_F_76134992_s7raGRbqRghzQjGs9Qxu2RqvucU31SPk.jpg"><span>Lorem ipsum dolor </span>
+    <h1 class="heading mt-5 text-white font-sans text-2xl cursor-pointer transition-all hover:text-3xl hover:transition-all ">Drag and Drop</h1>
+
+   <ul class="sortMain w-96 h-96 p-6 bg-white rounded-xl list-none flex flex-col justify-evenly">
+
+    <li class="sortList border border-black rounded-xl shadow-[5px_5px_0px_0px_rgba(109,40,217)] flex items-center justify-between  " draggable="true">
+<div class="items grid grid-cols-2 items-center p-1 ">
+    <img src="./image/360_F_76134992_s7raGRbqRghzQjGs9Qxu2RqvucU31SPk.jpg" class="h-12 w-12 rounded-full"><span>Lorem ipsum dolor </span>
 </div>
-<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<i class="fa fa-ellipsis-v p-2.5" aria-hidden="true"></i>
     </li>
 
-<li class="sortList" draggable="true">
-<div class="items">
- <img src="./image/istockphoto-1153469287-612x612.jpg"><span>Lorem ipsum dolor </span>
+<li class="sortList border border-black rounded-xl shadow-[5px_5px_0px_0px_rgba(109,40,217)] flex items-center justify-between " draggable="true">
+<div class="items grid grid-cols-2 items-center p-1 ">
+ <img src="./image/istockphoto-1153469287-612x612.jpg" class="h-12 w-12 rounded-full"><span>Lorem ipsum dolor </span>
 </div>
-<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<i class="fa fa-ellipsis-v p-2.5" aria-hidden="true"></i>
  </li>
 
-<li class="sortList" draggable="true">
-<div class="items">
- <img src="./image/sed.gif"><span>Lorem, ipsum dolor.</span>
+<li class="sortList border border-black rounded-xl shadow-[5px_5px_0px_0px_rgba(109,40,217)] flex items-center justify-between " draggable="true">
+<div class="items grid grid-cols-2 items-center p-1">
+ <img src="./image/sed.gif" class="h-12 w-12 rounded-full" ><span>Lorem, ipsum dolor.</span>
 </div>
-<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<i class="fa fa-ellipsis-v p-2.5" aria-hidden="true"></i>
 </li>
 
-<li class="sortList" draggable="true" dropzone="yes">
-<div class="items">
-<img src="./image/a1b81740b36374e7a9a690e683e3e423.jpg"><span>Lorem, ipsum.</span>
+<li class="sortList border border-black rounded-xl shadow-[5px_5px_0px_0px_rgba(109,40,217)] flex items-center justify-between" draggable="true" dropzone="yes">
+<div class="items grid grid-cols-2 items-center p-1 ">
+<img src="./image/a1b81740b36374e7a9a690e683e3e423.jpg" class="h-12 w-12 rounded-full "><span>Lorem, ipsum.</span>
 </div>
-<i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+<i class="fa fa-ellipsis-v p-2.5 " aria-hidden="true"></i>
 </li>
 
    </ul>
@@ -45,5 +47,5 @@
 </div>
 
 </body>
-<script src="./app.js"></script>
+ <script src="./app.js"></script> 
 </html>
