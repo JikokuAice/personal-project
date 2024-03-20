@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700;800&family=Varela&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <style>
+        body {
+            font-family: "Varela", sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row: 1fr 3fr;
+            justify-items: center;
+            align-items: start;
+            height: 100vh;
+            font-size: 1.5rem;
+            user-select: none ;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #ffffff;
+        align-items: center;
+            padding: 15px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 2px solid #c5c5c5;
+        }
+
+        .container {
+          margin-top: 5%;
+            width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            margin-top: 3px;
+        }
+
+        .task-item:last-child {
+            border-bottom: none;
+        }
+
+        input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .update{
+            background-color: #1255ff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .delete{
+            background-color: #4a4a4a;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        button {
+            background-color: #007f26;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        button:hover {
+            background-color:  #067f00e4;
+        }
+
+        .delete:hover{
+            background-color: #4f4f4fe9;
+        }
+
+        .update:hover{
+            background-color: #1255ffde;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Task Manager</h1>
+        <a href="./index.html">Home</a>
+        <a href="./history.html">history</a>
+    </div>
+    <div class="container">
+        <form action="http://localhost:5000/id" method="post">
+            <input type="text" name="data" placeholder="Enter your task...">
+            <button class="clickMe">Add Task</button>
+        </form>
+        <div class="task-list">
+        </div>
+    </div>
+</body>
+<script src="./scripts/script.js"></script>
+</html>

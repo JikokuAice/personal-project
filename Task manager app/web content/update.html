@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700;800&family=Varela&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Upadate</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        font-family: "Varela", sans-serif;
+        overflow: hidden;
+        padding:0px 4rem;
+        user-select: none;
+    }
+.outer{
+    width:100% ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    display: grid;
+    min-height: 300px;
+    min-width: 400px;
+    width: fit-content;
+    box-shadow:   0 2px 4px rgba(0, 0, 0, 0.554);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1.2rem;
+    align-content: space-evenly;
+   justify-items: center;
+}
+
+input:disabled{
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.768);
+    
+}
+
+
+    
+</style>
+<body>
+<div class="outer">
+
+<form class="inner" action="http://localhost:5000/update" method="post">
+    <h3>Update</h3>
+    <span>Task name</span>
+    <input type="text" placeholder="..." class="taskName" disabled>
+    <span>new name</span>
+    <input type="text" placeholder="..." class="newName" >
+    <button>Proceeds</button>
+</form>
+
+</div>
+</body>
+<script src="./scripts/renovate.js"></script>
+</html>

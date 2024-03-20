@@ -1,7 +1,14 @@
-const arr =[1,1,2,34,5,6];
+let ak = ()=>{
+    return Swal.fire({
+    title: "works",
+    text: "thanks",
+    icon: "success"
+  })}
 
-let pp = arr.reduce((a,c)=>{
-    return a
-},5)
 
-console.log(pp)
+
+const button = document.querySelector('button')
+
+button.addEventListener("mouseover",()=>{
+    ak();
+})

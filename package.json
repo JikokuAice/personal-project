@@ -1,0 +1,15 @@
+{
+  "name": "personal-project",
+  "version": "1.0.0",
+  "description": "personal project to level up my coding skill",
+  "main": "/Taskmanagerapp/index.js",
+  "scripts": {
+   "start": "node /Taskmanagerapp/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1"
+  }
+}
